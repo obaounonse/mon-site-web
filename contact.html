@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Association Étudiante</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Animation d'entrée pour les sections */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation pour les boutons */
+        .btn {
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animation au survol des cartes */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Animation pour le formulaire */
+        input, textarea, button {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        input:focus, textarea:focus {
+            box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+            transform: scale(1.02);
+        }
+
+        button:focus {
+            box-shadow: 0 0 12px rgba(0, 103, 25, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Association Étudiante</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">Événements</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="bg-primary text-white text-center py-5 fade-in">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p class="lead">Nous sommes là pour répondre à toutes vos questions.</p>
+        </div>
+    </header>
+
+    <!-- Section Formulaire de contact -->
+    <section class="py-5 fade-in">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Envoyez-nous un message</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nom complet</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Numéro de téléphone</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Sujet</label>
+                            <input type="text" class="form-control" id="subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </form>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Informations de contact</h2>
+                    <p><strong>Adresse :</strong> Balanzie, Côte d'Ivoire</p>
+                    <p><strong>Téléphone :</strong> 0566643382</p>
+                    <p><strong>Email :</strong> contact@associationetudiante.com</p>
+                    <p><strong>Heures d'ouverture :</strong></p>
+                    <ul>
+                        <li>Lundi - Vendredi : 9h00 - 18h00</li>
+                        <li>Samedi : 10h00 - 16h00</li>
+                        <li>Dimanche : Fermé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réseaux sociaux -->
+    <section class="py-5 fade-in">
+        <div class="container text-center">
+            <h2>Suivez-nous sur les réseaux sociaux</h2>
+            <p>Restez connectés avec notre association via nos plateformes sociales.</p>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.Facebook.com/@OuattaraMoussaBaounonse" class="btn btn-primary mx-2"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href=" https://www.youtube.com/@BaounonseOuattara " class="btn btn-danger mx-2"><i class="bi bi-youtube"></i> YouTube</a>
+                <a href="https://www.tiktok.com/@baounonseouattara" class="btn btn-info mx-2"><i class="bi bi-tiktok"></i> TikTok</a>
+                <a href="https://www.linkedin.com/in/baounonse-ouattara-1693072b7" class="btn btn-dark mx-2"><i class="bi bi-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 Association des Élèves et Étudiants de Balanzié (AEEB). Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

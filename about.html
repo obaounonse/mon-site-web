@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Association de Balanzie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("image/accueil.jpg") center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      animation: fade-in 2s ease-out;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      animation: fade-in-up 1.5s ease-out;
+    }
+
+    .hero .btn {
+      animation: pulse 2s infinite alternate;
+    }
+
+    /* Objectifs Section */
+    .objectives {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+    }
+
+    .objective-item {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .objective-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Cards - Organisation Section */
+    .card img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: auto;
+    }
+
+    .card {
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffc107;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.1);
+      }
+    }
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">AEEB</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link "href="events.html">Événements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>À propos de nous</h1>
+    <p>Découvrez notre mission, nos objectifs et notre impact.</p>
+    <a href="plus.html" class="btn btn-primary">En savoir plus</a>
+  </div>
+
+  <!-- Objectifs Section -->
+  <section class="objectives text-center">
+    <h2>Nos objectifs</h2>
+    <div class="row mt-4">
+      <div class="col-md-4 objective-item">
+        <i class="fas fa-book fa-3x mb-3 text-primary"></i>
+        <h4>Partage de connaissances</h4>
+        <p>Créer un réseau pour échanger des idées et des solutions.</p>
+      </div>
+      <div class="col-md-4 objective-item">
+        <i class="fas fa-handshake fa-3x mb-3 text-success"></i>
+        <h4>Renforcement des liens</h4>
+        <p>Organiser des événements pour bâtir une communauté soudée.</p>
+      </div>
+      <div class="col-md-4 objective-item">
+        <i class="fas fa-chart-line fa-3x mb-3 text-danger"></i>
+        <h4>Développement personnel</h4>
+        <p>Accompagner nos membres dans leur croissance académique.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organisation Section -->
+  <section class="container text-center my-5">
+    <h2>Notre organisation</h2>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image/presi_preview_rev_1.png" alt="Président">
+          <h5>Président</h5>
+          <p>Baley Fofana - Visionnaire et leader inspirant.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="image/baounonse_preview_rev_1.png" alt="Vice-président">
+          <h5>Vice-président</h5>
+          <p>Bamoussa Ouattara - Soutien stratégique.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="secretaire.jpg" alt="Secrétaire">
+          <h5>Secrétaire</h5>
+          <p>FOFANA DAOUDA - Gestionnaire des événements.</p>
+        </div>
+      </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="secretaire.jpg" alt="Charger de Communication">
+        <h5>Charger de Communication</h5>
+        <p>Zoumana Ouattara - Gestionnaire des Message.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="image/zoum.jpg" alt="porte-parole">
+        <h5>Porte-Parole</h5>
+        <p>Kenguele ouattara - Charger de la Transcription.</p>
+      </div>
+    </div>
+  <div class="col-md-4">
+    <div class="card">
+      <img src="secretaire.jpg" alt="superviseur">
+      <h5>Superviseur</h5>
+      <p>Adboulaye Kombala - Charger de la Supervision.</p>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Association des Élèves et Étudiants de Balanzie (AEEB). Tous droits réservés.</p>
+    <a href="contact.html">Contactez-nous</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
